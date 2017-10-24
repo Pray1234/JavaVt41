@@ -18,9 +18,4 @@ public class FellowWorker extends Person {
     public int getAge() {
         return super.age;
     }
-
-    @Override
-    public String toString() {
-        return "Опыт работы сотрудника " + this.expirience;
-    }
 }

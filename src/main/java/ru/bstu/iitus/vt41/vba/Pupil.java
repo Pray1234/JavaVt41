@@ -23,21 +23,4 @@ public class Pupil extends Person {
     public String toString() {
         return "Имя ученика " + this.firstName + " с возрастом " + super.age;
     }
-
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null || obj.getClass() != this.getClass()) {
-            return false;
-        }
-        Pupil pupil = (Pupil) obj;
-        return firstName != null && firstName.equals(pupil.firstName);
-    }
-
-    @Override
-    public int hashCode() {
-        return firstName == null ? 0 : firstName.hashCode();
-    }
 }

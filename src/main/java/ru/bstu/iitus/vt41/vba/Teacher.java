@@ -16,21 +16,4 @@ public class Teacher extends FellowWorker {
     public String toString() {
         return "Номер сертификата учителя " + this.certifNum + " с опытом работы " + super.expirience;
     }
-
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null || obj.getClass() != this.getClass()) {
-            return false;
-        }
-        Teacher teacher = (Teacher) obj;
-        return certifNum != null && certifNum.equals(teacher.certifNum);
-    }
-
-    @Override
-    public int hashCode() {
-        return certifNum == null ? 0 : certifNum.hashCode();
-    }
 }

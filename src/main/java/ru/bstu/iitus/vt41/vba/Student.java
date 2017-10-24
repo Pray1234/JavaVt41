@@ -23,21 +23,4 @@ public class Student extends Person {
     public String toString() {
         return "Номер группы студента " + this.groupNum;
     }
-
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null || obj.getClass() != this.getClass()) {
-            return false;
-        }
-        Student student = (Student) obj;
-        return groupNum != null && groupNum.equals(student.groupNum);
-    }
-
-    @Override
-    public int hashCode() {
-        return groupNum == null ? 0 : groupNum.hashCode();
-    }
 }

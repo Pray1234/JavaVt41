@@ -16,21 +16,4 @@ public class Director extends FellowWorker {
     public String toString() {
         return "Марка машины директора " + this.carName;
     }
-
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null || obj.getClass() != this.getClass()) {
-            return false;
-        }
-        Director director = (Director) obj;
-        return carName != null && carName.equals(director.carName);
-    }
-
-    @Override
-    public int hashCode() {
-        return carName == null ? 0 : carName.hashCode();
-    }
 }
